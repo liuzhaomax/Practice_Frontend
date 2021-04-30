@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="UTF-8">
+   <title>动画</title>
+   <style>
+      body>div{
+          width:100px;
+          height:100px;
+          margin: 20px auto 0;
+          color:orange;
+          font-size:100px;
+          line-height:1;
+          animation: circle 5s linear 0s infinite;
+          transform-origin: 0% 300%;
+      }
+      div>div{
+          animation: inner-circle 5s linear 0s infinite;
+      }
+      @keyframes circle {
+          from { transform:rotate(0deg); }
+          to { transform:rotate(360deg); }
+      }
+      @keyframes inner-circle{
+           from{
+               transform: rotate(360deg);
+           }
+       }
+   </style>
+</head>
+<body>
+  <div>
+      <div>☺</div>
+  </div>
+</body>
