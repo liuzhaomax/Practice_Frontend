@@ -7,7 +7,7 @@
  * @description forEach() 方法用于调用数组的每个元素，并将元素传递给回调函数。
  ***************************************************************************/
 
-Array.prototype.map = function (callback, thisArg) {
+Array.prototype.forEach = function (callback, thisArg) {
     if (this == undefined) {
         throw new TypeError('this is null or undefined')
     }
