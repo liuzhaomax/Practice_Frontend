@@ -8,7 +8,7 @@
  ***************************************************************************/
 
 Array.prototype.forEach = function (callback, thisArg) {
-    if (this == undefined) {
+    if (this === undefined) {
         throw new TypeError('this is null or undefined')
     }
     if (typeof  callback !== 'function') {
